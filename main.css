@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Press Start 2P", system-ui;
+    margin: 0;
+    background-color: #363434;
+}
+
+button {
+    font-family: "Press Start 2P", system-ui;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 20px 20px 30px;
+    .again {
+        padding: 30px 40px;
+        border: none;
+        font-size: 23px;
+        cursor: pointer;
+    }
+    .information {
+        color: white;
+    }
+}
+
+.container {
+    margin-left: 100px;
+    margin-right: 100px;
+
+    h1 {
+        color: white;
+        text-align: center;
+    }
+    .center {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        .heading-number {
+            display: flex;
+            background-color: white;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 65px;
+            font-size: 45px;
+        }
+        .heading-number::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            left: 0;
+            background-color: white;
+            bottom: 50px;
+            z-index: -1;
+        }
+    }
+}
+.main {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .inputs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 176px;
+        .number {
+            padding: 50px 25px;
+            margin-bottom: 20px;
+            width: 100%;
+            font-size: 40px;
+            font-family: "Press Start 2P", system-ui;
+        }
+        .number:focus {
+            outline: none;
+        }
+        .check {
+            padding: 25px 50px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+    .text {
+        color: white;
+        .hints {
+            margin-bottom: 70px;
+        }
+    }
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
